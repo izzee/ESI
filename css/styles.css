@@ -3,7 +3,7 @@ html{
   height: 100%;
   overflow: hidden;
   background-image: url('../img/bricks.png');
-  
+
 }
 body{
   padding: 0;
@@ -16,16 +16,16 @@ body{
   flex-direction: column;
 }
 .main-container div{
-  width: 700px;
+  width: 60vw;
   margin: auto;
 }
-.chain-container{
+.chains{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 75px;
 }
-.chain-container img{
+.chains img{
   margin: 0 5px;
   height: 100%;
 }
@@ -37,15 +37,17 @@ body{
   box-shadow: 0 0 5px 2px #252525, 0 0 5px #252525 inset;
 }
 .title{
-  width: 660px;
   margin: 10px auto;
   display: flex;
   justify-content: space-evenly;
 }
 .title a{
   font-family: 'Schoolbell';
-  text-shadow: 0 0 2px #888b8d;
-  font-size: 40px;
-  color: #fafafa;
+  text-shadow: 0 0 3px #888b8d;
+  font-size: 33px;
+  color: white;
   text-decoration: none;
+}
+.title a:hover{
+  text-shadow: 0 0 3px white;
 }
