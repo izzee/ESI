@@ -2,8 +2,8 @@ html{
   width: 100%;
   height: 100%;
   overflow: hidden;
+  user-select: none;
   background-image: url('../img/bricks.png');
-
 }
 body{
   padding: 0;
@@ -30,6 +30,7 @@ body{
   height: 100%;
 }
 .content-container{
+  position: relative;
   flex: 1;
   border-radius: 10px;
   border: 3px solid #dee4e8;
@@ -41,13 +42,25 @@ body{
   display: flex;
   justify-content: space-evenly;
 }
-.title a{
+.title p{
+  margin: 0;
   font-family: 'Schoolbell';
-  text-shadow: 0 0 3px #888b8d;
+  text-shadow: 0 0 3px #5d6061;
   font-size: 33px;
   color: white;
   text-decoration: none;
 }
-.title a:hover{
+.title p:hover{
   text-shadow: 0 0 3px white;
+}
+.content-container img{
+  border-radius: 5px;
+  box-shadow: 0 0 5px #5d6061;
+  border: 3px solid #dee4e8;
+  display: block;
+  width: 50%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
 }
